@@ -1,13 +1,7 @@
 import { model } from './model'
-import { temlates } from './temlates'
+import { Site } from './classes/site'
 import './styless/main.css'
 
-const site = document.querySelector('#site')
+const site = new Site('#site')
 
-model.forEach((item) => {
-  const toHTML = temlates[item.type]
-
-  if (toHTML) {
-    site.insertAdjacentHTML('beforeend', toHTML(item))
-  }
-})
+site.render(model)
