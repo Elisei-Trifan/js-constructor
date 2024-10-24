@@ -2,6 +2,10 @@
   position: relative;
 }
 
+body {
+  margin: 20px;
+}
+
 .content {
   position: absolute;
   top: 0;
