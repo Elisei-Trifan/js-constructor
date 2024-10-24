@@ -1,7 +1,8 @@
-import { row, col } from './utils'
+import { row, col, css } from './utils'
 
 function title(item) {
-  return row(col(`<h1>${item.value}</h1>`))
+  const { tag = 'h1', styles } = item.options
+  return row(col(`<${tag}>${item.value}</${tag}>`), css(styles))
 }
 
 function paragraf(item) {
@@ -14,7 +15,7 @@ function columns(item) {
 }
 
 function image(item) {
-  return row(item.value)
+  return row(`<img src="${item.value}" />`)
 }
 
 export const temlates = {
