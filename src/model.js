@@ -1,3 +1,5 @@
+import image from './assets/image.png'
+
 export const model = [
   {
     type: 'title',
@@ -13,6 +15,6 @@ export const model = [
   },
   {
     type: 'image',
-    value: '/src/assets/image.png',
+    value: image,
   },
 ]

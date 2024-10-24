@@ -1,40 +1,20 @@
+import { row, col } from './utils'
+
 function title(item) {
-  return `
-          <div class="row">
-            <div class="col-sm">
-              <h1>${item.value}</h1>
-            </div>
-          </div>
-  `
+  return row(col(`<h1>${item.value}</h1>`))
 }
 
 function paragraf(item) {
-  return `
-          <div class="row">
-            <div class="col-sm">
-              <p>${item.value}</p>
-            </div>
-          </div>
-      `
+  return row(col(`<p>${item.value}</p>`))
 }
 
 function columns(item) {
-  const html = item.value.map((item) => `<div class="col-sm">${item}</div>`)
-  return `
-          <div class="row">
-            ${html.join('')}
-          </div>
-    `
+  const html = item.value.map((item) => col(item))
+  return row(html.join(''))
 }
 
 function image(item) {
-  return `
-      <div class="row">
-        <div class="col-sm">
-          <img src="${item.value}"/>
-        </div>
-      </div>
-  `
+  return row(item.value)
 }
 
 export const temlates = {

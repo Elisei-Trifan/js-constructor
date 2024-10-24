@@ -8,8 +8,6 @@ model.forEach((item) => {
   const toHTML = temlates[item.type]
 
   if (toHTML) {
-    site.insertAdjacentHTML('beforeend', toHTML)
+    site.insertAdjacentHTML('beforeend', toHTML(item))
   }
 })
-
-console.log(temlates)
