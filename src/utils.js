@@ -7,6 +7,9 @@ export function col(content) {
 }
 
 export function css(styles = {}) {
+  if (typeof styles === 'string') {
+    return styles
+  }
   return Object.keys(styles)
     .map((item) => `${item}: ${styles[item]}`)
     .join(';')
