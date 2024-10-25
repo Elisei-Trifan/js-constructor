@@ -6,7 +6,7 @@ import {
   ParagrafBlock,
 } from './classes/block'
 
-const text = `Крутые видео и уроки по JavaScript тут: <a href="https://www.youtube.com/watch?v=0ViiJ8qTCFM"> Владилен Минин</a>`
+const text = `Крутые сайт-портфолио, созданный Трифан Елисеем: <a href="http://f76072it.beget.tech/"> Сайт-портфолио</a>`
 
 export const model = [
   new TitleBlock('Конструктор сайтов на JavaScript Vanilla', {
