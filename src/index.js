@@ -1,4 +1,5 @@
 import { model } from './model'
-import { Site } from './classes/site'
+import { App } from './classes/app'
 import './styless/main.css'
-import { Sidebar } from './classes/sidebar'
+
+new App(model).init()
