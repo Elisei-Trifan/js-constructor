@@ -6,7 +6,7 @@ import {
   ParagrafBlock,
 } from './classes/block'
 
-const text = `Крутые сайт-портфолио, созданный Трифан Елисеем: <a href="http://f76072it.beget.tech/"> Сайт-портфолио</a>`
+const text = `Крутой сайт-портфолио, созданный Трифан Елисеем: <a target:="_blank" href="http://f76072it.beget.tech/"> Сайт-портфолио</a>`
 
 export const model = [
   new TitleBlock('Конструктор сайтов на JavaScript Vanilla', {
@@ -64,9 +64,9 @@ export const model = [
 
   new ColumnsBlock(
     [
-      'Приложение на чистом JavaScript, без использования библиотек',
-      'Узнаешь как работаеют принципы SOLID и ООП в JavaScript за один курс',
-      'JavaScript - это просто, интересно. Научись создавать любые UI своими руками',
+      'Приложение на чистом JavaScript, без использования библиотек.',
+      'Применены принципы SOLID и ООП в JavaScript.',
+      'JavaScript - это просто, интересно.',
     ],
     {
       styles: {
