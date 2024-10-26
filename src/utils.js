@@ -23,7 +23,7 @@ export function block(type) {
         <input class="form-control form-control-sm" name="value" placeholder="value">
       </div>
       <div class="form-group">
-        <input class="form-control form-control-sm" name="styles" placeholder="color: green; text-align: center>
+        <input class="form-control form-control-sm" name="styles" placeholder="color:green; text-align:center">
       </div>
       <button type="submit" class="btn btn-primary btn-sm">Добавить</button>
     </form>
